@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:title="@string/home"/>
+    <item android:id="@+id/search"
+        android:title="@string/menuSearch"/>
+    <item android:id="@+id/setting"
+        android:title="@string/setting"/>
+    <item android:id="@+id/help"
+        android:title="@string/help_and_feedback"/>
+</menu>

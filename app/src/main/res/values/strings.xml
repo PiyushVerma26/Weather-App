@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="cityName">Enter City Name</string>
+    <string name="search">Search</string>
+    <string name="humidity">Humidity :-</string>
+    <string name="pressure">Pressure :-</string>
+    <string name="visibility">Visibility :-</string>
+    <string name="wind">Wind :-</string>
+    <string name="menu">menu</string>
+    <string name="weather">WEATHER</string>
+    <string name="home">Home</string>
+    <string name="menuSearch">Search</string>
+    <string name="setting">Setting</string>
+    <string name="help_and_feedback">Help and feedback</string>
+</resources>

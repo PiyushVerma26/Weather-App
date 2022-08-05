@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_view"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"/>
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="25dp"
+        android:autofillHints="none"
+        android:ems="10"
+        android:hint="@string/cityName"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#234915"
+        android:textColorHint="#546E7A"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btnSearch"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/search"
+        android:minHeight="48dp"
+        android:scaleType="center"
+        app:srcCompat="?android:attr/actionModeWebSearchDrawable"
+        app:tint="#570404"
+        tools:ignore="ImageContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/display"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/evCity"
+            android:layout_width="169dp"
+            android:layout_height="77dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textAlignment="gravity"
+            android:textColor="#170730"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/evTemp"
+            android:layout_width="169dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_marginTop="0dp"
+            android:padding="5dp"
+            android:textAlignment="gravity"
+            android:textColor="#28350C"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/extra"
+            android:orientation="vertical"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:layout_width="114dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:padding="5dp"
+                        android:text="@string/humidity"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvHumidity"
+                        android:layout_width="114dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="#8BE81F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="114dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:padding="5dp"
+                        android:text="@string/pressure"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvPressure"
+                        android:layout_width="114dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="#8BE81F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:layout_width="114dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:padding="5dp"
+                        android:text="@string/visibility"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvVisible"
+                        android:layout_width="114dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="#8BE81F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="114dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:padding="5dp"
+                        android:text="@string/wind"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvWind"
+                        android:layout_width="114dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="#8BE81F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
